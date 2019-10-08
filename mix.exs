@@ -25,7 +25,7 @@ defmodule KafkaGenStage.MixProject do
 
   defp deps do
     [
-      {:brod, "~> 3.7.0"},
+      {:brod, git: "https://github.com/hrubi/brod", branch: "decode-log-append-time-3.7.11"},
       {:gen_stage, "~> 0.14.0"},
       {:inch_ex, "~> 2.0", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.19", only: [:dev, :docs], runtime: false},
